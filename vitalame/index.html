@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VitalaMe</title>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<script type="text/javascript" src="calendar2Js.js"></script>
+</head>
+<style>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  html, body {
+  min-height: 100%;
+  }
+  body, div, form, input, p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+  }
+  h1 {
+  font-weight: 400;
+  }
+  .testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+  }
+  form {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc;
+  }
+  input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: middle;
+  }
+  input:hover, textarea:hover {
+  outline: none;
+  border: 1px solid #095484;
+  }
+  th, td {
+  width: 28%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align: unset;
+  line-height: 18px;
+  font-weight: 400;
+  word-break: break-all;
+  }
+  .first-col {
+  width: 16%;
+  text-align: left;
+  }
+  textarea:hover {
+  outline: none;
+  border: 1px solid #1c87c9;
+  }
+  table {
+  width: 100%;
+  }
+  textarea {
+  width: calc(100% - 6px);
+  }
+  .question {
+  padding: 15px 0 5px;
+  color: #095484;
+  }
+  .question-answer label {
+  display: block;
+  padding: 0 20px 10px 0;
+  }
+  .question-answer input {
+  width: auto;
+  }
+  .btn-block {
+  margin-top: 20px;
+  text-align: center;
+  }
+  button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #095484;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  }
+  button:hover {
+  background-color: #0666a3;
+  }
+  @media (min-width: 568px) {
+  th, td {
+  word-break: keep-all;
+  }
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#top" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#About us" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About us</a>
+    <a href="#Data" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Your data</a>
+    <a href="#Calendar" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Calendar</a>
+    <a href="#Personal profile" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Personal profile</a>
+  </div>
+</div>
+
+<div class="background w3-display-container w3-opacity-min" id="top">
+  <img src="logo.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-blue w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">HEALTH</span> FOR ME</span>
+  </div>
+</div>
+
+    <div class="row w3-blue">
+      <div class="column">
+        <img src="fresh_air.jpg" alt="img1" height="300" width="500">
+      </div>
+      <div class="column">
+        <img src="fresh_air2.jpg " alt="img2" height="300" width="500">
+      </div>
+      <div class="column">
+        <img src="fresh_air3.jpg" alt="img3" height="300" width="500">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-64 w3-center" id="About us">
+  <h2>OUR TEAM</h2>
+  <p>Meet the inspiring people behind VitalaUs</p>
+
+  <div class="w3-row"><br>
+
+  <div class="w3-quarter">
+    <img src="swetha.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Swetha</h3>
+    <p>Web Designer</p>
+  </div>
+
+  <div class="w3-quarter">
+    <img src="rahil.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Rahil</h3>
+    <p>Web Designer</p>
+  </div>
+
+  <div class="w3-quarter">
+    <img src="krupa.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Krupa</h3>
+    <p>Web Designer</p>
+  </div>
+
+  <div class="w3-quarter">
+    <img src="lily.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Lily</h3>
+    <p>Designer</p>
+  </div>
+
+  </div>
+  </div>
+
+  <script>
+  // Script for side navigation
+  function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+  }
+
+  // Close side navigation
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+
+  // Used to toggle the menu on smaller screens when clicking on the menu button
+  function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Data">
+      <h2 class="w3-wide">Your data</h2>
+      <p class="w3-opacity"><i>Please answer the following questions</i></p>
+      <div class="testbox">
+        <form action="/">
+          <h1>Some lifestyle questions</h1>
+          <p class="question">Date of Birth</p>
+          <div class="question-answer">
+            <label><input type="date"/></label>
+          </div>
+
+          <p class="question">Biological Sex</p>
+          <label><input type="radio" value="none" name="needed" /> Male</label>
+          <label><input type="radio" value="none" name="needed" /> Female</label>
+          <label><input type="radio" value="none" name="needed" /> Other</label>
+
+          <p class="question">Occupation</p>
+          <textarea rows="2"></textarea>
+
+          <p class="question">How long have you been smoking for? (Years)</p>
+          <div class="slidecontainer">
+            <input type="range" min="0" max="40" value="20" class="slider" id="myRange">
+            <p>Value: <span id="demo"></span></p>
+          </div>
+
+          <script>
+          var slider = document.getElementById("myRange");
+          var output = document.getElementById("demo");
+          output.innerHTML = slider.value;
+
+          slider.oninput = function() {
+            output.innerHTML = this.value;
+          }
+          </script>
+
+          <!-- </div> -->
+
+          <p class="question">How many cigarettes do you smoke a day?</p>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange1">
+            <p>Value: <span id="demo1"></span></p>
+          </div>
+
+          <script>
+          var slider = document.getElementById("myRange1");
+          var output = document.getElementById("demo1");
+          output.innerHTML = slider.value;
+
+          slider.oninput = function() {
+            output.innerHTML = this.value;
+          }
+          </script>
+
+          <p class="question">Parental history of COPD and lung cancer.
+            Chronic obstructive pulmonary disease (COPD) is the name for a group of lung conditions that cause breathing difficulties.</p>
+          <textarea rows="7"></textarea>
+
+          <div class="btn-block">
+            <button type="submit" href="/">Done!</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="Calendar">
+      <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>March<br><span style="font-size:18px">2020</span></li>
+        </ul>
+      </div>
+
+      <ul class="weekdays">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tues</li>
+        <li>Wed</li>
+        <li>Thurs</li>
+        <li>Fri</li>
+        <li>Sat</li>
+      </ul>
+
+      <ul class="days">
+
+        <li><span class="good">1</span></li>
+        <li><span class="bad">2</span></li>
+        <li><span class="bad">3</span></li>
+        <li><span class="good">4</span></li>
+        <li><span class="good">5</span></li>
+        <li><span class="good">6</span></li>
+        <li><span class="good">7</span></li>
+        <li><span class="good">8</span></li>
+        <li><span class="good">9</span></li>
+        <li><span class="active">10</span>
+        </p></li>
+        <li><span class="goals">11</span></li>
+        <li><span class="goals">12</span></li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+      </ul>
+
+      <p></p><p></p>
+      <img src="addGoals.png" alt="Add goals" align="left" width="40" height="40">
+      <h1> Add Goals </h1>
+
+      <table>
+        <tr>
+          <th>Colour</th>
+          <th>Indication</th>
+        </tr>
+        <tr>
+          <td><span class="greenKey">Green</span></td>
+          <td>Well done- you have reached your goals!</td>
+        </tr>
+        <tr>
+          <td><span class="redKey">Red</span></td>
+          <td>You didn't reach your goals unfortunately</td>
+        </tr>
+        <tr>
+          <td><span class="goldKey">Gold</span></td>
+          <td>Goals you have set</td>
+        </table>
+
+
+    <script src="calendar2Js.js"></script>
+    </div>
+
+<div id="Personal profile">
+  <div class="container">
+      <img src="rect.png" alt="Snow" style="width:50%;">
+      <div class="centered"><font size = "5">  Your health score is: 64%</font></div>
+    </div>
+    <div class="container">
+      <video width="400"  autoplay="autoplay">
+        <source src="lungs.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <h1>You have saved: £25 this WEEK</h1>
+</div>
+
+
+
+</html>

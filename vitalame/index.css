@@ -1,0 +1,206 @@
+html {
+  scroll-behavior: smooth;
+}
+#background {
+  background-image: url("logo.jpg");
+  min-height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:20px;
+  color: #000;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 2px;
+  background: #1;
+  color: #000
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 2px solid #165910;
+}
+
+.days li .good {
+  padding: 5px;
+  background: #c7ffdb;
+  color: white
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+}
+
+.days li .bad {
+  padding: 5px;
+  background: #ffd4d4;
+  color: white
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+}
+
+.days li .goals {
+  padding: 5px;
+  background: #ffebc9;
+  color: white
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+}
+
+.days li .greenKey {
+  padding: 5px;
+  background: #c7ffdb;
+  color: white
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.days li .redKey {
+  padding: 5px;
+  background: #ffd4d4;
+  color: white
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.days li .goldKey {
+  padding: 5px;
+  background: #ffebc9;
+  color: white
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color: lightblue;
+  }
+
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background-color: lightblue;
+  }
+
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: lightblue;
+  }
+
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background-color: lightblue;
+  }
+
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .movie {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width:1000px;
+}
+
+  .rect {
+  border-radius: 70px 70px 70px 70px;
+  -moz-border-radius: 70px 70px 70px 70px;
+  -webkit-border-radius: 70px 70px 70px 70px;
+  border: 0px solid #000000;
+  }
